@@ -1,0 +1,43 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# === Django ===
+*.sqlite3
+db.sqlite3
+media/temp_uploads/*
+!media/temp_uploads/.gitkeep
+
+# === Environment & Secrets ===
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Test Artifacts ===
+# Keep synthetic CVs (they're fake data, safe to commit)
+# But exclude any real CV uploads
+media/uploads/
+!tests/synthetic_cvs/
